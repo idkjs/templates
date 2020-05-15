@@ -1,5 +1,5 @@
 {
-  "name": "extreme-startup-bootstrap",
+  "name": "@idkjs/templates",
   "version": "1.0.0",
   "description": "You'll find bootstrap projects for several languages related to JavaScript in this repo:",
   "devDependencies": {},
