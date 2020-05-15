@@ -1,0 +1,18 @@
+{
+  "name": "extreme-startup-bootstrap",
+  "version": "1.0.0",
+  "description": "You'll find bootstrap projects for several languages related to JavaScript in this repo:",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Alain Armand <aarmand.inbox@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  },
+  "bin": {
+    "extreme": "./index.js"
+  }
+}
