@@ -1,0 +1,34 @@
+{
+	"name": "reason-tailwind-ppx-starter",
+	"reason": {
+		"react-jsx": 3
+	},
+	"sources": {
+		"dir": "src",
+		"subdirs": true,
+		"generators": [
+			{
+				"name": "gen-tailwind",
+				"edge": [ "styles/tailwind.css", ":", "styles/index.css" ]
+			}
+		]
+	},
+	"generators": [
+		{
+			"name": "gen-tailwind",
+			"command": "tailwindcss build $in -o $out -c ../../tailwind.config.js"
+		}
+	],
+	"bsc-flags": [ "-bs-super-errors", "-bs-no-version-header" ],
+	"ppx-flags": [ [ "@dylanirlbeck/tailwind-ppx/tailwind-ppx", "-path ./src/styles/tailwind.css" ] ],
+	"package-specs": [
+		{
+			"module": "commonjs",
+			"in-source": true
+		}
+	],
+	"suffix": ".bs.js",
+	"namespace": true,
+	"bs-dependencies": [ "reason-react" ],
+	"refmt": 3
+}
